@@ -1,1 +1,2 @@
-# DefectDojo_GIT_Actions
+# defectdojo-gha-cicd-demo
+Security scan github action pipeline result sent to defectdojo.
