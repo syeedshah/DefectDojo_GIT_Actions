@@ -68,7 +68,7 @@ jobs:
               -H 'accept: application/json' \
               -H 'Authorization: Token f3b8ad021c80beb079c52883644e5a067552aa8d' \
               -H 'Content-Type: multipart/form-data' \
-              -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
+              -H 'X-CSRFTOKEN: ZDwvnUvyx7VNsczq053tCPr9hW89TAWZBDyu7H0pvPOyPwtQgu61KbBvMcdwVarT' \
               -F 'product_type_name=Mateco_BE' \
               -F 'product_name=Q Service App' \
               -F 'engagement_name=Sprint 1' \
@@ -93,7 +93,6 @@ jobs:
               -F 'version=' \
               -F 'tags=checkov' \
               -F 'api_scan_configuration=' \
-              -F 'product_name=REST API' \
               -F 'file=@checkov.json;type=application/json' \
               -F 'auto_create_context=' \
               -F 'lead=' \
@@ -133,7 +132,7 @@ jobs:
               -H 'accept: application/json' \
               -H 'Content-Type: multipart/form-data' \
               -H 'Authorization: Token f3b8ad021c80beb079c52883644e5a067552aa8d' \
-              -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
+              -H 'X-CSRFTOKEN: ZDwvnUvyx7VNsczq053tCPr9hW89TAWZBDyu7H0pvPOyPwtQgu61KbBvMcdwVarT' \
               -F 'product_type_name=Mateco_BE' \
               -F 'product_name=Q Service App' \
               -F 'engagement_name=Sprint 1' \
@@ -158,7 +157,6 @@ jobs:
               -F 'version=' \
               -F 'tags=nikto' \
               -F 'api_scan_configuration=' \
-              -F 'product_name=REST API' \
               -F 'file=@nikto.xml;type=application/json' \
               -F 'auto_create_context=' \
               -F 'lead=' \
@@ -199,7 +197,6 @@ jobs:
               -F 'version=' \
               -F 'tags=trufflehog' \
               -F 'api_scan_configuration=' \
-              -F 'product_name=REST API' \
               -F 'file=@trufflehog.json;type=application/json' \
               -F 'auto_create_context=' \
               -F 'lead=' \
@@ -240,7 +237,6 @@ jobs:
               -F 'version=' \
               -F 'tags=safety' \
               -F 'api_scan_configuration=' \
-              -F 'product_name=REST API' \
               -F 'file=@safety.json;type=application/json' \
               -F 'auto_create_context=' \
               -F 'lead=' \
