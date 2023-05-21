@@ -70,6 +70,8 @@ jobs:
               -H 'Content-Type: multipart/form-data' \
               -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
               -F 'product_type_name=Mateco_BE' \
+              -F 'product_name=Q Service App' \
+              -F 'engagement_name=Sprint 1' \
               -F 'active=true' \
               -F 'endpoint_to_add=' \
               -F 'verified=true' \
@@ -109,6 +111,8 @@ jobs:
               -H 'Authorization: Token f3b8ad021c80beb079c52883644e5a067552aa8d' \
               -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
               -F 'product_type_name=Mateco_BE' \
+              -F 'product_name=Q Service App' \
+              -F 'engagement_name=Sprint 1' \
               -F 'active=true' \
               -F 'endpoint_to_add=' \
               -F 'verified=true' \
@@ -148,6 +152,8 @@ jobs:
               -H 'Authorization: Token f3b8ad021c80beb079c52883644e5a067552aa8d' \
               -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
               -F 'product_type_name=Mateco_BE' \
+              -F 'product_name=Q Service App' \
+              -F 'engagement_name=Sprint 1' \
               -F 'active=true' \
               -F 'endpoint_to_add=' \
               -F 'verified=true' \
@@ -187,6 +193,8 @@ jobs:
               -H 'Authorization: Token f3b8ad021c80beb079c52883644e5a067552aa8d' \
               -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
               -F 'product_type_name=Mateco_BE' \
+              -F 'product_name=Q Service App' \
+              -F 'engagement_name=Sprint 1' \
               -F 'active=true' \
               -F 'endpoint_to_add=' \
               -F 'verified=true' \
@@ -226,6 +234,8 @@ jobs:
               -H 'Content-Type: multipart/form-data' \
               -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
               -F 'product_type_name=Mateco_BE' \
+              -F 'product_name=Q Service App' \
+              -F 'engagement_name=Sprint 1' \
               -F 'active=true' \
               -F 'endpoint_to_add=' \
               -F 'verified=true' \
