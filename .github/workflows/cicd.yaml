@@ -77,7 +77,6 @@ jobs:
               -F 'verified=true' \
               -F 'close_old_findings=false' \
               -F 'test_title=' \
-              -F 'engagement_name=QService Sprint 1' \
               -F 'build_id=' \
               -F 'deduplication_on_engagement=' \
               -F 'push_to_jira=false' \
@@ -141,7 +140,6 @@ jobs:
               -F 'verified=true' \
               -F 'close_old_findings=false' \
               -F 'test_title=' \
-              -F 'engagement_name=Sprint 1' \
               -F 'build_id=' \
               -F 'deduplication_on_engagement=' \
               -F 'push_to_jira=false' \
@@ -181,7 +179,6 @@ jobs:
               -F 'verified=true' \
               -F 'close_old_findings=false' \
               -F 'test_title=' \
-              -F 'engagement_name=Sprint 1' \
               -F 'build_id=' \
               -F 'deduplication_on_engagement=' \
               -F 'push_to_jira=false' \
@@ -221,7 +218,6 @@ jobs:
               -F 'verified=true' \
               -F 'close_old_findings=false' \
               -F 'test_title=' \
-              -F 'engagement_name=Github Action Workflow' \
               -F 'build_id=' \
               -F 'deduplication_on_engagement=' \
               -F 'push_to_jira=false' \
