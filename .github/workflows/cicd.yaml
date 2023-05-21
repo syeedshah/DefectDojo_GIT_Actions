@@ -39,8 +39,8 @@ jobs:
       - name: Run secret scan with trufflehog
         run: trufflehog --regex --json --entropy=False . > trufflehog.json
 
-      # - name: Run SCA scan safety
-      #  run: safety check -r app/requirements.txt --json > safety.json
+      - name: Run SCA scan safety
+        run: safety check -r app/requirements.txt --json > safety.json
 
       - name: Run SAST with bandit
         run: bandit -r -f json -o bandit.json app/ || true
@@ -98,6 +98,7 @@ jobs:
               -F 'scan_type=Checkov Scan' \
               -F 'branch_tag=' \
               -F 'source_code_management_uri=' \
+              -F 'engagement='
           fi
           if [[ $code == 302 ]]; then
             echo "Uploading bandit scan.."
@@ -111,8 +112,8 @@ jobs:
               -F 'product_name=Q Service App' \
               -F 'engagement_name=Sprint 1' \
               -F 'minimum_severity=Info' \
-              -F 'active=true' \
-              -F 'verified=true' \
+              -F 'active=false' \
+              -F 'verified=false' \
               -F 'scan_type=Bandit Scan' \
               -F 'file=@bandit.json;type=application/json' \
               -F 'product_type_name=Mateco_BE' \
@@ -201,4 +202,42 @@ jobs:
               -F 'source_code_management_uri=' \
               -F 'engagement='
           fi
-          
+          if [[ $code == 302 ]]; then
+            echo "Uploading safety scan.."
+            curl -X 'POST' \
+              'http://52.56.80.2:8080/api/v2/import-scan/' \
+              -H 'accept: application/json' \
+              -H 'Authorization: Token f3b8ad021c80beb079c52883644e5a067552aa8d' \
+              -H 'Content-Type: multipart/form-data' \
+              -H 'X-CSRFTOKEN: VZcysZ0DR51ox9aNHM4ASbEfVaGjve0tPx5toRDClZp6faTFUon9KvSpOJ3UaHQI' \
+              -F 'product_type_name=Mateco_BE' \
+              -F 'product_name=Q Service App' \
+              -F 'engagement_name=Sprint 1' \
+              -F 'active=true' \
+              -F 'endpoint_to_add=' \
+              -F 'verified=true' \
+              -F 'close_old_findings=false' \
+              -F 'test_title=' \
+              -F 'build_id=' \
+              -F 'deduplication_on_engagement=' \
+              -F 'push_to_jira=false' \
+              -F 'minimum_severity=Info' \
+              -F 'close_old_findings_product_scope=false' \
+              -F 'scan_date=2023-05-18' \
+              -F 'create_finding_groups_for_all_findings=true' \
+              -F 'engagement_end_date=' \
+              -F 'environment=' \
+              -F 'service=' \
+              -F 'commit_hash=' \
+              -F 'group_by=' \
+              -F 'version=' \
+              -F 'tags=safety' \
+              -F 'api_scan_configuration=' \
+              -F 'file=@safety.json;type=application/json' \
+              -F 'auto_create_context=' \
+              -F 'lead=' \
+              -F 'scan_type=Safety Scan' \
+              -F 'branch_tag=' \
+              -F 'source_code_management_uri=' \
+              -F 'engagement='
+          fi
