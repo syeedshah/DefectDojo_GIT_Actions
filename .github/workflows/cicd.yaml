@@ -115,7 +115,7 @@ jobs:
               -F 'active=false' \
               -F 'verified=false' \
               -F 'scan_type=Bandit Scan' \
-              -F 'file=@bandit_scan.json;type=application/json' \
+              -F 'file=@bandit.json;type=application/json' \
               -F 'product_type_name=Mateco_BE' \
               -F 'product_name=Q Service App' \
               -F 'engagement_name=Sprint 1' \
