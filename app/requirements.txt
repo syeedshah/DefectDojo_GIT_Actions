@@ -1,7 +1,1 @@
 flask==2.3.2
-jsonschema==1.7
-PyJWT==1.0
-pyotp==1.7
-qrcode==3.0
-requests==3.0
-cryptography==1.1
