@@ -33,6 +33,7 @@ jobs:
       - name: Install Security Tools
         run: |
           pip3 install trufflehog safety bandit checkov
+          brew install dependency-check
           sudo apt-get install nikto -y
 
       # Runs a set of commands using the runners shell
