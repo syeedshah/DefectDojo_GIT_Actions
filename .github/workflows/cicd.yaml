@@ -39,8 +39,8 @@ jobs:
       - name: Run secret scan with trufflehog
         run: trufflehog --regex --json --entropy=False . > trufflehog.json
 
-    #  - name: Run SCA scan safety
-     #   run: safety check -r app/requirements.txt --json > safety.json
+      - name: Run SCA scan safety
+        run: safety check -r app/requirements.txt --json > safety.json
 
       - name: Run SAST with bandit
         run: bandit -r -f json -o bandit.json app/ || true
